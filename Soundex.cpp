@@ -21,7 +21,7 @@ string Soundex::encode(string word)
 {
     if (word.length() == 0)
         return "";
-    string code{static_cast<char>(toupper(static_cast<char>(word[0])))};
+    string code{static_cast<char>(toupper(word.front()))};
     
     char cprev(0), cnew(0);
     bool first = true;
